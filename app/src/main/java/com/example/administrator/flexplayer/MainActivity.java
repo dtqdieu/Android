@@ -13,52 +13,55 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d("GiaiThua", String.valueOf(GiaiThua(1)));
+        Car car1 = new Car("Mer",6,"Red");
+        car1.printCar();
 
-        for (int i = 0; i <= 100; i++) {
-            if (NguyenTo(i)) {
-                Log.d("NguyenTo", "" + i);
-            }
-        }
-
-        Log.d("ChiaHet5", String.valueOf(ChiaHet5()));
-
-        for (int i = 0; i <= 1000; i++) {
-            if (SoHoanThien(i)) {
-                Log.d("SoHoanThien", "" + i);
-            }
-        }
-
-        Log.d("TinhTongChuSo", String.valueOf(TinhTongChuSo(8545604)));
-
-        int[] n = new int[5];
-        n[0] = 3;
-        n[1] = 6;
-        n[2] = 5;
-        n[3] = 4;
-        n[4] = 2;
-        Log.d("DemLe", String.valueOf(DemLe(n)));
-        SapXep(n);
-        InMang(n);
-
-
-        int[][] m = new int[3][3];
-        m[0][0] = 1;
-        m[0][1] = 3;
-        m[0][2] = 4;
-        //8
-
-        m[1][0] = 1;
-        m[1][1] = 1;
-        m[1][2] = 1;
-        //3
-
-        m[2][0] = 1;
-        m[2][1] = 5;
-        m[2][2] = 1;
-        //7
-
-        TongHang(m, 3,3);
+//        Log.d("GiaiThua", String.valueOf(GiaiThua(1)));
+//
+//        for (int i = 0; i <= 100; i++) {
+//            if (NguyenTo(i)) {
+//                Log.d("NguyenTo", "" + i);
+//            }
+//        }
+//
+//        Log.d("ChiaHet5", String.valueOf(ChiaHet5()));
+//
+//        for (int i = 0; i <= 1000; i++) {
+//            if (SoHoanThien(i)) {
+//                Log.d("SoHoanThien", "" + i);
+//            }
+//        }
+//
+//        Log.d("TinhTongChuSo", String.valueOf(TinhTongChuSo(8545604)));
+//
+//        int[] n = new int[5];
+//        n[0] = 3;
+//        n[1] = 6;
+//        n[2] = 5;
+//        n[3] = 4;
+//        n[4] = 2;
+//        Log.d("DemLe", String.valueOf(DemLe(n)));
+//        SapXep(n);
+//        InMang(n);
+//
+//
+//        int[][] m = new int[3][3];
+//        m[0][0] = 1;
+//        m[0][1] = 3;
+//        m[0][2] = 4;
+//        //8
+//
+//        m[1][0] = 1;
+//        m[1][1] = 1;
+//        m[1][2] = 1;
+//        //3
+//
+//        m[2][0] = 1;
+//        m[2][1] = 5;
+//        m[2][2] = 1;
+//        //7
+//
+//        TongHang(m, 3,3);
 
 
 
