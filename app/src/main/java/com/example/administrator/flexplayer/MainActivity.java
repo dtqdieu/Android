@@ -5,6 +5,12 @@ import android.os.Bundle;
 import android.util.Log;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
+import BaiTap.AnPham;
+import BaiTap.Bang;
+import HCNPackage.HinhChuNhat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,8 +19,46 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Car car1 = new Car("Mer",6,"Red");
-        car1.printCar();
+        Bang bang = new Bang();
+        bang.setTuaDe("NAOGN");
+        bang.setGiaMua(1.5f);
+        Log.e("KETHUA",bang.tinhGia()+"");
+
+        ArrayList<HinhChuNhat> ListHCN = new ArrayList<HinhChuNhat>();
+        ListHCN.add(new HinhChuNhat(3,2));
+        ListHCN.add(new HinhChuNhat(4,3));
+        ListHCN.add(new HinhChuNhat(5,3));
+        int size = ListHCN.size();
+        float DienTichMax = 0;
+        for (int i = 0; i < size; i++ ){
+            float DienTich = ListHCN.get(i).dientichHCN();
+            Log.e("HCN","Chieu Dai: "+ListHCN.get(i).getChieuDai()+ "; Chieu Rong: "+ListHCN.get(i).getChieuRong()+
+                    "; Dien Tich: "+DienTich);
+            if(DienTichMax < DienTich){
+                DienTichMax = DienTich;
+            }
+        }
+        Log.e("HCN", "DienTichMAX"+DienTichMax);
+
+//
+//
+//        Car car1 = new Car("Mer",6,"Red");
+//        car1.printCar();
+//        ThanhPho HaNoi = new ThanhPho("HaNoi", 25, 20);
+//        HaNoi.DanhGia();
+//
+//
+//        ArrayList<Float> diemDT = new ArrayList<Float>();
+//        diemDT.add( 1.2f);
+//        diemDT.add(2.2f);
+//        diemDT.add( 1.2f);
+//        diemDT.add(2.2f);
+//        diemDT.add( 1.2f);
+//        diemDT.add(2.2f);
+//        SinhVien SV = new SinhVien("N", diemDT);
+//        Log.e("SV",""+SV.ketQua);
+
+
 
 //        Log.d("GiaiThua", String.valueOf(GiaiThua(1)));
 //
