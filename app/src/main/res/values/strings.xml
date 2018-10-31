@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FlexPlayer</string>
+    <string name="cancel">Huỷ</string>
+    <string name="chi_dao">Chuyển chỉ đạo</string>
 </resources>
